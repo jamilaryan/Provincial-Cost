@@ -1,0 +1,323 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_column="0">
+<TableLayout
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="#FFF"
+    android:id="@+id/tableLayout"
+    android:padding="5dp"
+    android:stretchColumns="1,2,3">
+
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/tableRow0">
+        <!--billTextView -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/incomeTotal"
+            android:id="@+id/incomeTextView"
+            android:layout_column="0"
+            android:textColor="@color/blue"
+            android:textSize="12sp"
+            android:gravity="right"
+            android:paddingRight="5dp" />
+
+        <!--billTextEdit-->
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/incomeEditText"
+            android:hint="Tap here to type in"
+            android:textColorHint="#20303030"
+            android:layout_column="1" android:layout_span="3"
+            android:inputType="numberDecimal"
+            android:layout_weight="1" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/tableRow00">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/provincelbl"
+            android:layout_column="0"
+            android:textColor="@color/blue"
+            android:textSize="12sp"
+            android:gravity="right"
+            android:paddingRight="5dp"
+            android:id="@+id/textView" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_span="3"
+            android:id="@+id/spinner" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/tableRow1">
+
+        <!--tenTextView-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Federal"
+            android:id="@+id/onTextView"
+            android:textColor="@color/blue" android:layout_column="1"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:layout_weight="1" />
+
+        <!--fifteenTextView-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Provincial"
+            android:id="@+id/abTextView"
+            android:textColor="@color/blue"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:layout_weight="1" />
+
+        <!--twentyTextView-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Total"
+            android:id="@+id/bcTextView"
+            android:textColor="@color/blue"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:layout_weight="1" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/tableRow2">
+
+        <!--tipTextView-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/provincialTax"
+            android:id="@+id/provTaxTextView"
+            android:textColor="@color/blue"
+            android:textSize="12sp"
+            android:gravity="right"
+            android:paddingRight="5dp" />
+
+        <!--tip10EditText-->
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/provTaxONEditText"
+            android:text="@string/zero"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:focusable="false"
+            android:layout_weight="1" />
+
+        <!--tip15EditText-->
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/provTaxABEditText"
+            android:text="@string/zero"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:focusable="false"
+            android:layout_weight="1" />
+
+        <!--tip20EditText-->
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/provTaxBCEditText"
+            android:text="@string/zero"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:focusable="false"
+            android:layout_weight="1" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/tableRow3">
+
+        <!--totalTextView-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/netTotal"
+            android:id="@+id/netTotalTextView"
+            android:textColor="@color/blue"
+            android:textSize="12sp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp"
+            android:gravity="center" />
+
+        <!--total10EditText-->
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/totalONEditText"
+            android:text="@string/zero"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:focusable="false"
+            android:layout_weight="1" />
+
+        <!--total15EditText-->
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/totalABEditText"
+            android:text="@string/zero"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:focusable="false"
+            android:layout_weight="1" />
+
+        <!--total20EditText-->
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/totalBCEditText"
+            android:text="@string/zero"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:focusable="false"
+            android:layout_weight="1" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/tableRow4">
+
+        <!--customTextView-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/otherExpenses"
+            android:id="@+id/otherExpTextView"
+            android:textColor="@color/blue"
+            android:textSize="12sp"
+            android:gravity="center_vertical|right"
+            android:paddingRight="5dp"
+            />
+
+        <!--customSeekBar-->
+        <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/otherExpSeekBar" android:layout_span="2"
+            android:progress="0"
+            android:paddingBottom="5dp"
+            android:focusable="false"
+            android:layout_weight="1" />
+
+        <!--customTipTextView-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Percent"
+            android:id="@+id/customExpTextView"
+            android:textColor="@color/blue"
+            android:textSize="12sp"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:paddingBottom="5dp"
+            android:layout_weight="1" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/tableRow5">
+
+        <!--tipCustomTextView-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/expenseTotal"
+            android:id="@+id/expTotalTextView"
+            android:textColor="@color/blue"
+            android:textSize="12sp"
+            android:gravity="right"
+            android:paddingRight="5dp" />
+
+        <!--tipCustomEditText-->
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/expTotalEditText"
+            android:text="@string/zero"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:focusable="false"
+            android:layout_weight="1" />
+
+        <!--totalCustomTextView-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/balance"
+            android:id="@+id/balanceTextView"
+            android:textColor="@color/blue"
+            android:textSize="12sp"
+            android:gravity="right"
+            android:paddingRight="5dp"
+            android:layout_weight="1"/>
+
+        <!--totalCustomEditText-->
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/balanceEditText"
+            android:text="@string/zero"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:focusable="false"
+            android:layout_weight="1" />
+    </TableRow>
+</TableLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView"
+        android:visibility="visible"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="260dp"
+        android:layout_marginBottom="0dp"
+        android:src="@drawable/canada_map" />
+</RelativeLayout>

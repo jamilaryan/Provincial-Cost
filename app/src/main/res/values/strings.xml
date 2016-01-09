@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Provincial Cost</string>
+    <string name="incomeTotal">Income</string>
+    <string name="provincialTax">Taxes</string>        <!--Provincial Tax -->
+    <string name="netTotal">Balance</string>     <!--Net amount -->
+    <string name="otherExpenses">Costs</string> <!--Other Expenses-->
+    <string name="zero">0.0</string>
+    <string name="expenseTotal">Outgoing</string> <!--Total Expense-->
+    <string name="balance">Total</string>             <!--Balance-->
+    <string name="action_settings">Settings</string>
+    <string name="provincelbl">Province</string>
+    <string-array name="provinces">
+        <item>Alberta (AB)</item> 0
+        <item>British Columbia (BC)</item>1
+        <item>Manitoba (MB)</item>2
+        <item>New Brunswick (NB)</item>3
+        <item>Newfoundland and Labrador (NL)</item>4
+        <item>Northwest Territories (NT)</item>5
+        <item>Nova Scotia (NS)</item>6
+        <item>Nunavut (NU)</item>7
+        <item>Ontario (ON)</item>8
+        <item>Prince Edward Island (PE)</item>9
+        <item>Quebec (QC)</item>10
+        <item>Saskatchewan (SK)</item>11
+        <item>Yukon Territories (YT)</item>12
+    </string-array>
+
+</resources>
